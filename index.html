@@ -9,24 +9,91 @@
 
     <title>Joseph Supo | Programador - Desarrollador Web</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!--stylesheet-->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css" />
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+
+    <!--AOS animations-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   </head>
 
   <body>
+
+    <!--loader-->
+    <div id="loader_container" class="loader_container">
+      <div id= "loader" class="loader"></div>
+    </div>
+    
+    <!--header-->
     <header class="header">
+      <!--logo_header-->
       <img src="./assets/images/logo_portafolio.png" alt="Logo Portafolio" class="logo_header">
-
+      <!--opc_menu-->
       <nav class="nav_menu">
-        <a>Inicio</a>
-        <a>Sobre mi</a>
-        <a>Habilidades</a>
-        <a>Formación</a>
-        <a>Proyectos</a>
-        <a>Contacto</a>
-
+        <a href="#inicio" data-section="menu" data-value="1">Inicio</a>
+        <a href="#sobreMi" data-section="menu" data-value="2">Sobre mi</a>
+        <a href="habilidades" data-section="menu" data-value="3">Habilidades</a>
+        <a href="formacion" data-section="menu" data-value="4">Formación</a>
+        <a href="proyectos" data-section="menu" data-value="5">Proyectos</a>
+        <a href="contacto" data-section="menu" data-value="6">Contacto</a>
       </nav>
+
+      <!--btn-->
+      <div id="btn" class="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
     </header>
+        
+    <!--Main-->
+
+    <!--Footer-->
+
+    <footer>
+
+      <!--Redes sociales-->
+
+      <div class="footer_container">
+        <div class="footer_redes_container">
+          <a href="https://www.linkedin.com/in/aohnjs/" target="_blank">
+            <img src="./assets/images/linkedin_footer.png" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/Aohn-Js" target="_blank">
+            <img src="./assets/images/github_footer.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <!--Texto del footer-->
+
+      <div class="footer_text_container">
+        <span>Copyright © | Coded by Joseph Supo</span>
+      </div>
+    </footer>
+
+    <!--Boton para subir-->
+
+    <div class="btn_top_container">
+      <div class="btn_top">
+        <i class="fa-solid fa-chevron-up"></i><!--link de fontawesome.com (tiene la imagen del boton)-->
+      </div>
+    </div>
+
+    <!--AOS animaciones-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+    
+    <!--Script-->
+
+    <script src="./script.js"></script>
+
   </body>
 
 </html>
