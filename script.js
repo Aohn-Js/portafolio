@@ -6,10 +6,11 @@ const flagsElement = document.getElementById('flags');
 const textsToChange = document.querySelectorAll('[data-section]');
 
 /* =========== loader_container =========== */
-window.addEventListener('load', function() {
-  var loader = document.getElementById('loader_container');
-  loader.style.display = 'none';
-});
+window.addEventListener('load', () => {
+    const contenedorLoader = document.querySelector('.loader_container');
+    contenedorLoader.style.opacity = 0;
+    contenedorLoader.style.visibility = 'hidden';
+})
 
 /* =========== header =========== */
 
