@@ -232,13 +232,14 @@
               lo antes posible.</span
             >
           </div>
-          <form class="form_contacto">
-            <input type="text" placeholder="Nombre | Name" />
-            <input type="text" placeholder="E-mail" />
-            <input type="text" placeholder="Asunto | Subject" />
-            <textarea name="" id="" placeholder="Mensaje | Message"></textarea>
+          <form action="https://formspree.io/f/xvzwjbre" method="POST" class="form_contacto">
+            <label for="aohnjs@gmail.com"></label>
+            <input type="name" name="name" placeholder="Nombre | Name" required/>
+            <input type="email" name="email" placeholder="E-mail" required/>
+            <input type="subject" name="subject" placeholder="Asunto | Subject" required/>
+            <textarea name="message" id="" placeholder="Mensaje | Message" required></textarea>
             <div class="btn_form_contacto">
-              <button>Enviar</button>
+              <button type="submit">Enviar</button>
             </div>
           </form>
         </div>
